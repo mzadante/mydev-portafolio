@@ -1,12 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Header from "../components/Header.astro";
 import Badge from "../components/Badge.astro";
 import Github from "../components/Github.astro";
+import Linkedin from "../components/Linkedin.astro";
+import Cvitae from "../components/Cvitae.astro";
+import Email from "../components/Email.astro";
 ---
 
-<Layout title="Portafolio Dev Dante Martínez">
+<Layout 
+title="Portafolio Dante Martínez - Técnico universitario Programador - Desarrollo web y software">
   <main>
     <section class="w-full mx-auto lg:w-[740px] py-40">
       <div class="flex justify-between">
@@ -16,7 +18,7 @@ import Github from "../components/Github.astro";
           👋 Hola, soy Dante
           <div class="flex-row justify-center item-center">
             <a href="https://www.linkedin.com/in/dantemartínez/" target="_blank" rel="noopener">
-              <Badge>Linkedin</Badge>
+              <Badge>Buscando Trabajo</Badge>
             </a>
           </div>
         </h1>
@@ -27,10 +29,26 @@ import Github from "../components/Github.astro";
 		<span class="text-yellow-600">Me apasiona, programar y desarrollar soluciones de aplicaciones web originales
 		y personalizadas.</span>
       </h2>
-      <ul>
+      <ul class="flex gap-x-10 mt-10 justify-end">
 		<li>
-			<a href="">
+			<a 
+			href="https://github.com/mzadante" target="_blank" rel="noopener">
 				<Github />
+			</a>
+		</li>
+		<li>
+			<a href="https://www.linkedin.com/in/dantemartínez/" target="_blank" rel="noopener">
+				<Linkedin />
+			</a>
+		</li>
+		<li>
+			<a href=""target="_blank" rel="noopener">
+				<Cvitae />
+			</a>
+		</li>
+		<li>
+			<a href=""target="_blank" rel="noopener">
+				<Email />
 			</a>
 		</li>
 		
