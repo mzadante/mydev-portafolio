@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import Card from "../components/Card.astro";
 import Header from "../components/Header.astro";
 import Badge from "../components/Badge.astro";
+import Github from "../components/Github.astro";
 ---
 
 <Layout title="Portafolio Dev Dante Martínez">
@@ -20,12 +21,20 @@ import Badge from "../components/Badge.astro";
           </div>
         </h1>
       </div>
-      <h2 class="text-xl">
-        Tengo mas de 2 años de experiencia: Técnico Universitario en
-        Programación egresado de la UTN - FRSR, Mendoza - Argentina. Desarrollo
-        y soluciones de aplicaciones web originales y personalizadas.
+      <h2 class="text-2xl text-wrap  ">
+        Soy <strong>Técnico Universitario en Programación</strong> egresado de la Universidad Tecnológica 
+		Nacional (UTN) - FRSR, Argentina.<br>
+		<span class="text-yellow-600">Me apasiona, programar y desarrollar soluciones de aplicaciones web originales
+		y personalizadas.</span>
       </h2>
-      <ul></ul>
+      <ul>
+		<li>
+			<a href="">
+				<Github />
+			</a>
+		</li>
+		
+	  </ul>
     </section>
   </main>
 </Layout>
