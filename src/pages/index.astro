@@ -8,6 +8,10 @@ import Email from "../components/Email.astro";
 import Experiencia from "../components/Experiencia.astro";
 import SectionContainer from "../components/SectionContainer.astro";
 import ExperienciaIcon from "../components/ExperienciaIcon.astro";
+import EstudiosIcon from "../components/EstudiosIcon.astro";
+import CodeIcon from "../components/CodeIcon.astro";
+import Proyectos from "../components/Proyectos.astro";
+import Estudios from "../components/Estudios.astro";
 ---
 
 <Layout
@@ -70,12 +74,28 @@ import ExperienciaIcon from "../components/ExperienciaIcon.astro";
         </li>
       </ul>
     </SectionContainer>
-    <SectionContainer id="experiencia">
+    <SectionContainer class="pb-20" id="experiencia">
       <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
         <ExperienciaIcon class="size-8" />
         Experiencia Laboral
       </h2>
       <Experiencia />
+    </SectionContainer>
+    
+    <SectionContainer class="pb-20" id="estudios">
+      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
+        <EstudiosIcon  class="size-8"/>
+        Mis Estudios
+      </h2>
+      <Estudios />
+    </SectionContainer>
+
+    <SectionContainer id="proyectos">
+      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
+        <CodeIcon  class="size-10"/>
+        Proyectos
+      </h2>
+      <Proyectos />
     </SectionContainer>
   </main>
 </Layout>

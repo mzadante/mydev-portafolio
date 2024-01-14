@@ -1,0 +1,81 @@
+---
+import JavaScript from "../components/JavaScript.astro";
+import Html from "../components/Html.astro";
+import Css from "../components/Css.astro";
+
+const TAGS = {
+  HTML: {
+    name: "Html",
+    class: "bg-[#FAFAFA] text-black border-white/30",
+    icon: Html,
+  },
+  CSS: {
+    name: "Css",
+    class: "bg-[#072BF7] text-white border-white/30",
+    icon: Css,
+  },
+  JAVASCRIPT: {
+    name: "JavaScript",
+    class: "bg-[#060606] text-white border-white/30",
+    icon: JavaScript,
+  },
+};
+const PROJECTS = [
+  {
+    title: "Encriptador de Palabras",
+    description:
+      "Encriptador de palabras, comenzando con front-end. Primer desafío Oracle Next Education dictado por Alura Latam. año 2022.",
+    link: "https://mzadante.github.io/Encriptador_de_Palabras/",
+    github: "https://github.com/mzadante/Encriptador_de_Palabras",
+    image: "/proyects/encriptador.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+  },
+  {
+    title: "Juego del Ahorcado",
+    description:
+    "El juego del ahorcado, segundo desafío Oracle Next Education dictado por Alura Latam. año 2022.",
+    link: "https://mzadante.github.io/github.io.ahorcado/",
+    github: "https://github.com/mzadante/github.io.ahorcado",
+    image: "/proyects/ahorcado.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+  },
+];
+---
+
+{
+  PROJECTS.map(({ image, title, description, tags, link, github }) => (
+    <div class="flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-col md:min-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
+        
+    <a href={link} target="_blank"
+            rel="noopener" >
+      <img
+      class="rounded shadow-2xl shadow-white/10 aspect-video"
+        src={image}
+        alt={`Captura de pantalla del proyecto ${title}`}
+      />
+    </a>
+      <div class="flex flex-col justify-between p-4 leading-normal">
+       
+        <h3 class="text-2xl text-yellow-300 dark:text-yellow-200 mb-2 ">
+          {title}
+        </h3>
+        <p class="text-white text-lg mb-4 text-pretty">{description}</p>
+        <ul class="flex gap-x-2 flex-row mb-2 justify-center">
+          {tags.map((tag) => (
+            <li>
+              <span
+                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10`}
+              >
+                <tag.icon class="size-4" />
+                {tag.name}
+              </span>
+            </li>
+          ))}
+          
+        </ul>
+        <a  href={github}><img class="size-8" src="/proyects/github.svg" alt="Logo github"></a>
+      </div>
+    
+</div>
+  ))
+}
