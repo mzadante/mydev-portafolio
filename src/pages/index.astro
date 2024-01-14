@@ -13,34 +13,33 @@ import ExperienciaIcon from "../components/ExperienciaIcon.astro";
 <Layout
   title="Portafolio Dante Martínez - Técnico universitario Programador - Desarrollo web y software"
 >
-  <main>
-    <SectionContainer class="py-40 pb-20">
-      <div >
-        <h1 class="text-white text-5xl font-bold flex-row gap-x-20 flex pb-5 items-center"
+  <main class="px-4">
+    <SectionContainer class="py-40 pb-30">
+      <h1
+        class="text-white text-2xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 text-pretty"
+      >
+        👋 Hola, soy Dante Martínez
+        <a class="flex justify-center items-center"
+          href="https://www.linkedin.com/in/dantemartínez/"
+          target="_blank"
+          rel="noopener"
         >
-          👋 Hola, soy Dante
-          <div class="flex-row justify-center item-center">
-            <a
-              href="https://www.linkedin.com/in/dantemartínez/"
-              target="_blank"
-              rel="noopener"
-            >
-              <Badge>Buscando Trabajo</Badge>
-            </a>
-          </div>
-        </h1>
-      </div>
-      <h2 class="text-2xl text-wrap">
-        Soy <strong>Técnico Universitario en Programación</strong> egresado de la
+		<Badge>Busco Trabajo</Badge>
+        </a>
+      </h1>
+      <h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-white dark:text-white">
+        Soy <span class="text-pink-600 dark:text-pink-500">Técnico Universitario en Programación</span> egresado de la
         Universidad Tecnológica Nacional (UTN) - FRSR, Argentina.<br />
-        <span class="text-yellow-600"
+        <span class="text-yellow-300/90"
           >Me apasiona, programar y desarrollar soluciones de aplicaciones web
           originales y personalizadas.</span
         >
       </h2>
-      <ul class="flex gap-x-10 mt-10 justify-end">
+      <ul class="flex gap-x-10 mt-10 justify-start text-white">
         <li>
-          <a href="https://github.com/mzadante" target="_blank" rel="noopener">
+          <a href="https://github.com/mzadante"
+		   target="_blank" 
+		   rel="noopener">
             <Github />
           </a>
         </li>
@@ -54,28 +53,29 @@ import ExperienciaIcon from "../components/ExperienciaIcon.astro";
           </a>
         </li>
         <li>
-          <a href="" target="_blank" rel="noopener">
+          <a href="" 
+		  	target="_blank" 
+		  	rel="noopener">
             <Cvitae />
           </a>
         </li>
         <li>
-          <a href="" target="_blank" rel="noopener">
+          <a
+            href="mailto:mzadantemartinez@gmail.com"
+            target="_blank"
+            rel="noopener"
+          >
             <Email />
           </a>
         </li>
       </ul>
     </SectionContainer>
     <SectionContainer id="experiencia">
-		<h2 class="text-3xl mb-5 font-semibold flex gap-x-2 items-center">
-			<ExperienciaIcon class="size-8"/>
-			Experiencia
-		</h2>
-      <Experiencia
-		title="Desarrollador Web"
-		company="Freelance"
-		date="2019 - Actualidad"
-		description="Desarrollo de aplicaciones web y software a medida, utilizando tecnologías como HTML, CSS, JavaScript, PHP, MySQL, Laravel, Vue.js, TailwindCSS, Bootstrap, Git, entre otras."
-	  />
+      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
+        <ExperienciaIcon class="size-8" />
+        Experiencia Laboral
+      </h2>
+      <Experiencia />
     </SectionContainer>
   </main>
 </Layout>
