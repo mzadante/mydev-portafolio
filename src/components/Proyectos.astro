@@ -2,6 +2,8 @@
 import JavaScript from "../components/JavaScript.astro";
 import Html from "../components/Html.astro";
 import Css from "../components/Css.astro";
+import Bootstrap from "./Bootstrap.astro";
+import Mysql from "./Mysql.astro";
 
 const TAGS = {
   HTML: {
@@ -11,16 +13,36 @@ const TAGS = {
   },
   CSS: {
     name: "Css",
-    class: "bg-[#072BF7] text-white border-white/30",
+    class: "bg-[#45C29E] text-black border-white/30",
     icon: Css,
   },
   JAVASCRIPT: {
     name: "JavaScript",
-    class: "bg-[#060606] text-white border-white/30",
+    class: "bg-[#2B6CE7] text-white border-white/30",
     icon: JavaScript,
+  },
+  BOOTSTRAP: {
+    name: "Bootstrap",
+    class: "bg-[#893F84] text-white border-white/30",
+    icon: Bootstrap,
+  },
+  MYSQL: {
+    name: "MySQL",
+    class: "bg-[#C2BDC2] text-black border-white/30",
+    icon: Mysql,
   },
 };
 const PROJECTS = [
+{
+    title: "E-commerce Tierra Media",
+    description:
+      "E-commerce desarrollado como muestra de un comercio dedicado a la venta de productos de merchandising de diversas series, películas y videojuegos. Incluye un carrito de compras y es compatible con pasarelas de pagos como MERCADOPAGO. Además, facilita la respuesta a mensajes de contacto a través de la pestaña 'Contestar'.",
+    link: "https://transcendent-fox-9b2652.netlify.app/",
+    github: "https://github.com/mzadante/UTN_2023_4toSemestre/tree/main/JavaScript/e-comerce",
+    image: "/proyects/e-comerce-tierra-media.png",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.MYSQL],
+  },
+
   {
     title: "Encriptador de Palabras",
     description:
@@ -73,7 +95,8 @@ const PROJECTS = [
           ))}
           
         </ul>
-        <a  href={github}><img class="size-8" src="/proyects/github.svg" alt="Logo github"></a>
+        <a  href={github} target="_blank" rel="noopener">
+          <img class="size-8" src="/proyects/github.svg" alt="Logo github"></a>
       </div>
     
 </div>
