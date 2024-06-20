@@ -17,7 +17,7 @@ import Estudios from "../components/Estudios.astro";
 <Layout
   title="Portafolio Dante Martínez - Técnico universitario Programador - Desarrollo web y software"
 >
-  <main class="px-4">
+  <main class="px-5">
     <SectionContainer class="py-40 pb-30">
       <!-- <a href="https://www.linkedin.com/in/dantemartínez/" target="_blank">
         <img
@@ -96,13 +96,13 @@ import Estudios from "../components/Estudios.astro";
       </h2>
       <Estudios />
     </SectionContainer>
-
-    <SectionContainer id="proyectos">
-      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
-        <CodeIcon  class="size-10"/>
-        Proyectos
-      </h2>
-      <Proyectos />
+    <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 justify-center items-center text-white">
+      <CodeIcon  class="size-10"/>
+      Proyectos
+    </h2>
+    
+    <SectionContainer id="proyectos" class="flex flex-row flex-wrap gap-x-2">
+      <Proyectos/>      
     </SectionContainer>
   </main>
 </Layout>
