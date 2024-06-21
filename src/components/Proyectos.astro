@@ -34,58 +34,58 @@ const TAGS = {
 };
 const PROJECTS = [
 {
-    title: "E-commerce Tierra Media",
+    title: "App Web EKOSTOP",
     description:
-      "E-commerce de productos de merchandising de diversas series, películas y videojuegos. Incluye un carrito de compras y es compatible con pasarelas de pagos como Mercado Pago.",
-    link: "https://transcendent-fox-9b2652.netlify.app/",
+      "Aplicación Web para el control de estacionamiento medido. La misma permite la gestión de usuarios, vehículos, zonas, tarifas, etc. Además, permite la gestión de los inspectores, la emisión de actas de infracción y la gestión de las mismas. Por último, permite la gestión de los pagos de los usuarios y la emisión de reportes de gestión.",
+    link: "https://app-estacionamiento-controlado.web.app/",
     github: "https://github.com/mzadante/UTN_2023_4toSemestre/tree/main/JavaScript/e-comerce",
-    image: "/proyects/e-comerce-tierra-media.png",
+    image: "/proyects/app-ekostop-presentacion.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.MYSQL],
   },
 
   {
-    title: "Encriptador de Palabras",
+    title: "Landing Page Annidada Tech",
     description:
-      "Encriptador de palabras, comenzando con front-end. Primer desafío Oracle Next Education dictado por Alura Latam. año 2022.",
+      "ANNIDADA es una empresa de desarrollo de software que creamos con nuestro equipo de trabajo.Esta empresa nace del emprendimiento anterior de la app EKOSTOP, la cual fue creada desde un proyecto simple y pudo impulsarnos a lograr introducirla en San Rafael Mendoza. Hoy cuenta con aprobación del consejo deliberante de dicha ciudad con el aval de la UTN",
     link: "https://mzadante.github.io/Encriptador_de_Palabras/",
     github: "https://github.com/mzadante/Encriptador_de_Palabras",
-    image: "/proyects/encriptador.png",
+    image: "/proyects/annidada-tech.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Juego del Ahorcado",
+    title: "Chat de Voz con Gemini",
     description:
-    "El juego del ahorcado, segundo desafío Oracle Next Education dictado por Alura Latam. año 2022.",
-    link: "https://mzadante.github.io/github.io.ahorcado/",
-    github: "https://github.com/mzadante/github.io.ahorcado",
-    image: "/proyects/ahorcado.png",
+    "Un chat de voz bot que te permite interactuar con la IA de Gemini 1.5-pro. Puedes hacer preguntas permitiendo el acceso al microfono con tu propia voz y recibir respuestas en formato de voz por parte de la IA, también escribir la pregunta como cualquier chatbot, para detener la conversación presionando el botón Redictar.",
+    link: "https://chat-bot-de-voz-personal.netlify.app/",
+    github: "",
+    image: "/proyects/chat-bot-celu.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Juego del Ahorcado",
+    title: "App Country Search",
     description:
-    "El juego del ahorcado, segundo desafío Oracle Next Education dictado por Alura Latam. año 2022.",
+    "Aplicación creada para aprende a utilizar el Framework de VueJs y a consumir una API REST. En este caso, se utilizó la API de REST Countries para obtener información de los países del mundo. La aplicación permite buscar países por nombre, filtrarlos por región y ver más detalles de cada país. COMO BONUS: incorpore en su metodo de busqueda el metodo merge sort para tener una busqueda instantanea, Amo este metodo de busqueda!.",
     link: "https://mzadante.github.io/github.io.ahorcado/",
     github: "https://github.com/mzadante/github.io.ahorcado",
-    image: "/proyects/ahorcado.png",
+    image: "/proyects/country-search.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Juego del Ahorcado",
+    title: "E-comerce Tierra Media Store",
     description:
-    "El juego del ahorcado, segundo desafío Oracle Next Education dictado por Alura Latam. año 2022.",
+    "E-commerce desarrollado como muestra de un comercio dedicad a la venta de productos de merchandising de distintas series, películas y videojuegos. La misma posee carrito de compras y se le puede añadir pasarela de pagos como MERCADOPAGOS. Permite también la contestación de mensajes de contacto a través de la pestaña contestar.",
     link: "https://mzadante.github.io/github.io.ahorcado/",
     github: "https://github.com/mzadante/github.io.ahorcado",
-    image: "/proyects/ahorcado.png",
+    image: "/proyects/e-comerce-tm.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Juego del Ahorcado",
+    title: "Encriptador de mensajes",
     description:
-    "El juego del ahorcado, segundo desafío Oracle Next Education dictado por Alura Latam. año 2022.",
-    link: "https://mzadante.github.io/github.io.ahorcado/",
+    "Este es un encriptador de mensajes que permite encriptar y desencriptar mensajes de texto. La aplicación utiliza el cifrado de César, un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Primeras practicas en el año 2022",
+    link: "https://mzadante.github.io/Encriptador_de_Palabras/",
     github: "https://github.com/mzadante/github.io.ahorcado",
-    image: "/proyects/ahorcado.png",
+    image: "/proyects/encriptador-nuevo.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ];
@@ -94,18 +94,18 @@ const PROJECTS = [
 {
   PROJECTS.map(({ image, title, description, tags, link, github }) => (
 
-  <div class="mb-3 bg-indigo-200 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+  <div class="mb-4 bg-violet-300 max-w-sm bg-white border border-amber-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <a href={link} target="_blank" rel="noopener">
       <img class="rounded-t-lg" src={image}alt={`Captura de pantalla del proyecto ${title}`} />
     </a>
-    <div class="p-4 shadow-lg-white">
+    <div class="p-4 ">
       <h5 class="p-1 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
         <p class="p-2 mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
         <ul class="flex shadow-lg gap-x-1 gap-y-2 flex-row mb-5 p-1 h-1 justify-center flex-wrap ">
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10 `}>
+                class={`flex border-lime-950 gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10 `}>
                 <tag.icon class="size-4 " />
                 {tag.name}
               </span>
