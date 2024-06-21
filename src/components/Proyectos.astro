@@ -4,17 +4,29 @@ import Html from "../components/Html.astro";
 import Css from "../components/Css.astro";
 import Bootstrap from "./Bootstrap.astro";
 import Mysql from "./Mysql.astro";
+import Vue from "../components/Vue.astro";
+import Firebase from "../components/Firebase.astro";
 
 const TAGS = {
   HTML: {
     name: "Html",
-    class: "bg-[#FAFAFA] text-black border-white/30",
+    class: "bg-[#eab308] text-black border-white/30",
     icon: Html,
   },
   CSS: {
     name: "Css",
-    class: "bg-[#45C29E] text-black border-white/30",
+    class: "bg-[#be185d] text-white border-white/30",
     icon: Css,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#1d4ed8] text-white border-white/30",
+    icon: Firebase,
+  },
+  VUE: {
+    name: "VueJs",
+    class: "bg-[#172554] text-white border-white/30",
+    icon: Vue,
   },
   JAVASCRIPT: {
     name: "JavaScript",
@@ -38,9 +50,9 @@ const PROJECTS = [
     description:
       "Aplicación Web para el control de estacionamiento medido. La misma permite la gestión de usuarios, vehículos, zonas, tarifas, etc. Además, permite la gestión de los inspectores, la emisión de actas de infracción y la gestión de las mismas. Por último, permite la gestión de los pagos de los usuarios y la emisión de reportes de gestión.",
     link: "https://app-estacionamiento-controlado.web.app/",
-    github: "https://github.com/mzadante/UTN_2023_4toSemestre/tree/main/JavaScript/e-comerce",
+    github: "https://www.annidada.com.ar/",
     image: "/proyects/app-ekostop-presentacion.jpeg",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.MYSQL],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.FIREBASE],
   },
 
   {
@@ -59,7 +71,7 @@ const PROJECTS = [
     link: "https://chat-bot-de-voz-personal.netlify.app/",
     github: "",
     image: "/proyects/chat-bot-celu.jpeg",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
   },
   {
     title: "App Country Search",
@@ -68,7 +80,7 @@ const PROJECTS = [
     link: "https://mzadante.github.io/github.io.ahorcado/",
     github: "https://github.com/mzadante/github.io.ahorcado",
     image: "/proyects/country-search.jpeg",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    tags: [TAGS.VUE],
   },
   {
     title: "E-comerce Tierra Media Store",
@@ -77,7 +89,7 @@ const PROJECTS = [
     link: "https://mzadante.github.io/github.io.ahorcado/",
     github: "https://github.com/mzadante/github.io.ahorcado",
     image: "/proyects/e-comerce-tm.jpeg",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.MYSQL],
   },
   {
     title: "Encriptador de mensajes",
