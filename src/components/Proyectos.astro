@@ -61,7 +61,7 @@ const PROJECTS = [
       "ANNIDADA es una empresa de desarrollo de software que creamos con nuestro equipo de trabajo.Esta empresa nace del emprendimiento anterior de la app EKOSTOP, la cual fue creada desde un proyecto simple y pudo impulsarnos a lograr introducirla en San Rafael Mendoza. Hoy cuenta con aprobación del consejo deliberante de dicha ciudad con el aval de la UTN",
     link: "https://mzadante.github.io/Encriptador_de_Palabras/",
     github: "https://github.com/mzadante",
-    image: "/proyects/annidada-tech.jpeg",
+    image: "/proyects/annidada-tech1.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
@@ -86,7 +86,7 @@ const PROJECTS = [
     title: "E-comerce Tierra Media Store",
     description:
     "E-commerce desarrollado como muestra de un comercio dedicad a la venta de productos de merchandising de distintas series, películas y videojuegos. La misma posee carrito de compras y se le puede añadir pasarela de pagos como MERCADOPAGOS. Permite también la contestación de mensajes de contacto a través de la pestaña contestar.",
-    link: "https://mzadante.github.io/github.io.ahorcado/",
+    link: "https://transcendent-fox-9b2652.netlify.app/",
     github: "https://github.com/mzadante",
     image: "/proyects/e-comerce-tm.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.MYSQL],
@@ -107,7 +107,7 @@ const PROJECTS = [
   PROJECTS.map(({ image, title, description, tags, link, github }) => (
 
   <div class="mb-4 bg-violet-300 max-w-sm bg-white border border-amber-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
-    <a href={link} target="_blank" rel="noopener">
+    <a href={link} aria-label="proyectos" target="_blank" rel="noopener">
       <img class="rounded-t-lg" src={image}alt={`Captura de pantalla del proyecto ${title}`} />
     </a>
     <div class="p-4 ">
@@ -124,7 +124,7 @@ const PROJECTS = [
             </li>
           ))}   
         </ul>
-        <a href={github} target="_blank" rel="noopener" class="flex justify-center">
+        <a href={github} aria-label="GitHub" target="_blank" rel="noopener" class="flex justify-center">
           <img class="size-8 bg-indigo-950 text-white rounded-lg shadow-lg mt-10" src="/proyects/github.svg" alt="Logo github"></a>
     </div>
   </div>
