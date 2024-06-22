@@ -51,7 +51,7 @@ const PROJECTS = [
       "Aplicación Web para el control de estacionamiento medido. La misma permite la gestión de usuarios, vehículos, zonas, tarifas, etc. Además, permite la gestión de los inspectores, la emisión de actas de infracción y la gestión de las mismas. Por último, permite la gestión de los pagos de los usuarios y la emisión de reportes de gestión.",
     link: "https://app-estacionamiento-controlado.web.app/",
     github: "https://www.annidada.com.ar/",
-    image: "/proyects/app-ekostop-presentacion.jpeg",
+    image: "src/assets/app-ekostop-presentacion.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.FIREBASE],
   },
 
@@ -61,7 +61,7 @@ const PROJECTS = [
       "ANNIDADA es una empresa de desarrollo de software que creamos con nuestro equipo de trabajo.Esta empresa nace del emprendimiento anterior de la app EKOSTOP, la cual fue creada desde un proyecto simple y pudo impulsarnos a lograr introducirla en San Rafael Mendoza. Hoy cuenta con aprobación del consejo deliberante de dicha ciudad con el aval de la UTN",
     link: "https://mzadante.github.io/Encriptador_de_Palabras/",
     github: "https://github.com/mzadante",
-    image: "/proyects/annidada-tech1.jpeg",
+    image: "src/assets/annidada-tech1.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
@@ -70,7 +70,7 @@ const PROJECTS = [
     "Un chat de voz bot que te permite interactuar con la IA de Gemini 1.5-pro. Puedes hacer preguntas permitiendo el acceso al microfono con tu propia voz y recibir respuestas en formato de voz por parte de la IA, también escribir la pregunta como cualquier chatbot, para detener la conversación presionando el botón Redictar.",
     link: "https://chat-bot-de-voz-personal.netlify.app/",
     github: "https://github.com/mzadante/Chat_bot_dev/tree/main/chats/chatbot-voz-nic",
-    image: "/proyects/chat-bot-celu.jpeg",
+    image: "src/assets/chat-bot-celu.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
   },
   {
@@ -79,7 +79,7 @@ const PROJECTS = [
     "Aplicación creada para aprende a utilizar el Framework de VueJs y a consumir una API REST. En este caso, se utilizó la API de REST Countries para obtener información de los países del mundo. La aplicación permite buscar países por nombre, filtrarlos por región y ver más detalles de cada país. COMO BONUS: incorpore en su metodo de busqueda el metodo merge sort para tener una busqueda instantanea, Amo este metodo de busqueda!.",
     link: "https://country-data-search-engine-free.netlify.app/",
     github: "https://github.com/mzadante/app-paises-api-vue",
-    image: "/proyects/country-search.jpeg",
+    image: "src/assets/country-search.jpeg",
     tags: [TAGS.VUE],
   },
   {
@@ -88,7 +88,7 @@ const PROJECTS = [
     "E-commerce desarrollado como muestra de un comercio dedicad a la venta de productos de merchandising de distintas series, películas y videojuegos. La misma posee carrito de compras y se le puede añadir pasarela de pagos como MERCADOPAGOS. Permite también la contestación de mensajes de contacto a través de la pestaña contestar.",
     link: "https://transcendent-fox-9b2652.netlify.app/",
     github: "https://github.com/mzadante",
-    image: "/proyects/e-comerce-tm.jpeg",
+    image: "src/assets/e-comerce-tm.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.MYSQL],
   },
   {
@@ -97,7 +97,7 @@ const PROJECTS = [
     "Este es un encriptador de mensajes que permite encriptar y desencriptar mensajes de texto. La aplicación utiliza el cifrado de César, un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Primeras practicas en el año 2022",
     link: "https://mzadante.github.io/Encriptador_de_Palabras/",
     github: "https://github.com/mzadante/Encriptador_de_Palabras",
-    image: "/proyects/encriptador-nuevo.jpeg",
+    image: "src/assets/encriptador-nuevo.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ];
@@ -108,7 +108,7 @@ const PROJECTS = [
 
   <div class="mb-4 bg-violet-300 max-w-sm bg-white border border-amber-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
     <a href={link} aria-label="proyectos" target="_blank" rel="noopener">
-      <img class="rounded-t-lg" src={image}alt={`Captura de pantalla del proyecto ${title}`} />
+      <img class="rounded-t-lg" src={image} alt={`Captura de pantalla del proyecto ${title}`} />
     </a>
     <div class="p-4 ">
       <h5 class="p-1 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h5>
@@ -124,8 +124,8 @@ const PROJECTS = [
             </li>
           ))}   
         </ul>
-        <a href={github} aria-label="GitHub" target="_blank" rel="noopener" class="flex justify-center">
-          <img class="size-8 bg-indigo-950 text-white rounded-lg shadow-lg mt-10" src="/proyects/github.svg" alt="Logo github"></a>
+        <a href={github} aria-label="proyectos" target="_blank" rel="noopener" class="flex justify-center">
+            <img class="size-8 bg-indigo-950 text-white rounded-lg shadow-lg mt-10" src="src/assets/github.svg" alt="Logo github" loading="lazy"></a>
     </div>
   </div>
   ))
