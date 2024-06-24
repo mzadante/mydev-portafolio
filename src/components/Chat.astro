@@ -1,0 +1,35 @@
+
+<iframe
+  id="iframeId"
+  src="https://www.stack-ai.com/embed/4c03e282-bec2-4439-84d5-50357fee4120/1921cd36-600b-416c-bed9-841be84a669b/6659f90a03e61f70ebf09fed"
+  width="475"
+  height="600"
+  frameborder="0"
+  style="position: fixed; z-index: 1; bottom: 15px; right: 15px;"
+></iframe>
+
+<script type="module">
+  function handleMessage(event) {
+    if (event.data.type === 'chatbotStateChange') {
+      const iframe = document.getElementById('iframeId');
+      if (iframe) {
+        if (event.data.isClosed) {
+          iframe.style.width = '80px';
+          iframe.style.height = '80px';
+        } else {
+          iframe.style.width = '475px';
+          iframe.style.height = '700px';
+        }
+      }
+    }
+  }
+
+  // Attach event listener
+  window.addEventListener('message', handleMessage);
+
+  // If you want to clean up the event listener when the page unloads (optional)
+  window.addEventListener('beforeunload', function () {
+    window.removeEventListener('message', handleMessage);
+  });
+</script>
+

@@ -17,19 +17,19 @@ import Estudios from "../components/Estudios.astro";
 <Layout
   title="Portafolio Dante Martínez - Técnico universitario Programador - Desarrollo web y software"
 >
-  <main class="px-4">
+  <main class="px-5 flex-col justify-center ">
     <SectionContainer class="py-40 pb-30">
-      <a href="https://www.linkedin.com/in/dantemartínez/" target="_blank">
+      <!-- <a href="https://www.linkedin.com/in/dantemartínez/" target="_blank">
         <img
         class="rounded-full size-20 mb-4"
         src="/proyects/fotoPerfil.png"
         alt="Dante Martínez. foto perfil"
       />
-    </a>
+    </a> -->
       <h1
         class="text-white text-2xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 text-pretty"
       >
-        👋 Hola, soy Dante Martínez
+        Hola, soy Dante Martínez
         <a class="flex justify-center items-center"
           href="https://www.linkedin.com/in/dantemartínez/"
           target="_blank"
@@ -42,8 +42,8 @@ import Estudios from "../components/Estudios.astro";
         Soy <span class="text-pink-600 dark:text-pink-500">Técnico Universitario en Programación,</span> egresado de la
         Universidad Tecnológica Nacional (UTN) - FRSR, Argentina.<br />
         <span class="text-yellow-300/90"
-          >Me apasiona programar y desarrollar soluciones de aplicaciones web
-          originales y personalizadas.</span
+          >Me apasiona programar y aprender a desarrollar soluciones de programacion 
+          originales y personalizadas, además de trabajar en equipo para crecer como un buen profesional.</span
         >
       </h2>
       <ul class="flex gap-x-10 mt-10 justify-start text-white">
@@ -64,7 +64,7 @@ import Estudios from "../components/Estudios.astro";
           </a>
         </li>
         <li>
-          <a href="/proyects/2024-DanteMartinez.pdf" 
+          <a href="https://drive.google.com/file/d/1O4hqzbMADQS8bDgttpqAOGtTUdpMNK-R/view?usp=sharing" 
 		  	target="_blank" 
 		  	rel="noopener">
             <Cvitae />
@@ -96,13 +96,13 @@ import Estudios from "../components/Estudios.astro";
       </h2>
       <Estudios />
     </SectionContainer>
-
-    <SectionContainer id="proyectos">
-      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
-        <CodeIcon  class="size-10"/>
-        Proyectos
-      </h2>
-      <Proyectos />
+    <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 justify-center items-center text-white">
+      <CodeIcon  class="size-10"/>
+      Proyectos
+    </h2>
+    
+    <SectionContainer id="proyectos" class="flex flex-row flex-wrap gap-x-7 justify-center ">
+      <Proyectos/>      
     </SectionContainer>
   </main>
 </Layout>

@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Chat from "../components/Chat.astro";
 import Footer from "../components/Footer.astro";
 // Supports weights 100-900
 import "@fontsource-variable/onest";
@@ -11,19 +12,24 @@ interface Props {
 const { title } = Astro.props;
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={"Portafolio web de Tecnico universitario en programación"} />
+    <meta name="author" content="Dante Nicolás Martínez" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, programador, frontend, Backend, fullStack, universitario, tecnico " />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-
+ 
   <body class="relative text-black dark:text-white">
     <div class="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div>
+    <div>
+      <Chat />
+    </div>
     <Header />
     <slot />
     <Footer />
@@ -32,7 +38,7 @@ const { title } = Astro.props;
 
 <style is:global>
   :root {
-    color-scheme: light dark;
+    color-scheme: light;
   }
   html {
     font-family: "Onest Variable", sans-serif;

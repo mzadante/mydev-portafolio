@@ -4,17 +4,29 @@ import Html from "../components/Html.astro";
 import Css from "../components/Css.astro";
 import Bootstrap from "./Bootstrap.astro";
 import Mysql from "./Mysql.astro";
+import Vue from "../components/Vue.astro";
+import Firebase from "../components/Firebase.astro";
 
 const TAGS = {
   HTML: {
     name: "Html",
-    class: "bg-[#FAFAFA] text-black border-white/30",
+    class: "bg-[#eab308] text-black border-white/30",
     icon: Html,
   },
   CSS: {
     name: "Css",
-    class: "bg-[#45C29E] text-black border-white/30",
+    class: "bg-[#be185d] text-white border-white/30",
     icon: Css,
+  },
+  FIREBASE: {
+    name: "Firebase",
+    class: "bg-[#1d4ed8] text-white border-white/30",
+    icon: Firebase,
+  },
+  VUE: {
+    name: "VueJs",
+    class: "bg-[#172554] text-white border-white/30",
+    icon: Vue,
   },
   JAVASCRIPT: {
     name: "JavaScript",
@@ -34,31 +46,58 @@ const TAGS = {
 };
 const PROJECTS = [
 {
-    title: "E-commerce Tierra Media",
+    title: "App Web EKOSTOP",
     description:
-      "E-commerce desarrollado como muestra de un comercio dedicado a la venta de productos de merchandising de diversas series, películas y videojuegos. Incluye un carrito de compras y es compatible con pasarelas de pagos como MERCADOPAGO. Además, facilita la respuesta a mensajes de contacto a través de la pestaña 'Contestar'.",
-    link: "https://transcendent-fox-9b2652.netlify.app/",
-    github: "https://github.com/mzadante/UTN_2023_4toSemestre/tree/main/JavaScript/e-comerce",
-    image: "/proyects/e-comerce-tierra-media.png",
-    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP, TAGS.MYSQL],
+      "Aplicación Web para el control de estacionamiento medido. La misma permite la gestión de usuarios, vehículos, zonas, tarifas, etc. Además, permite la gestión de los inspectores, la emisión de actas de infracción y la gestión de las mismas. Por último, permite la gestión de los pagos de los usuarios y la emisión de reportes de gestión.",
+    link: "https://app-estacionamiento-controlado.web.app/",
+    github: "https://www.annidada.com.ar/",
+    image: "/public/proyects/app-ekostop-presentacion.jpeg",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.FIREBASE],
   },
 
   {
-    title: "Encriptador de Palabras",
+    title: "Landing Page Annidada Tech",
     description:
-      "Encriptador de palabras, comenzando con front-end. Primer desafío Oracle Next Education dictado por Alura Latam. año 2022.",
-    link: "https://mzadante.github.io/Encriptador_de_Palabras/",
-    github: "https://github.com/mzadante/Encriptador_de_Palabras",
-    image: "/proyects/encriptador.png",
+      "ANNIDADA es una empresa de desarrollo de software que creamos con nuestro equipo de trabajo.Esta empresa nace del emprendimiento anterior de la app EKOSTOP, la cual fue creada desde un proyecto simple y pudo impulsarnos a lograr introducirla en San Rafael Mendoza. Hoy cuenta con aprobación del consejo deliberante de dicha ciudad con el aval de la UTN",
+    link: "https://www.annidada.com.ar/",
+    github: "https://github.com/mzadante",
+    image: "/public/proyects/annidada-tech.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
   {
-    title: "Juego del Ahorcado",
+    title: "Chat de Voz con Gemini",
     description:
-    "El juego del ahorcado, segundo desafío Oracle Next Education dictado por Alura Latam. año 2022.",
-    link: "https://mzadante.github.io/github.io.ahorcado/",
-    github: "https://github.com/mzadante/github.io.ahorcado",
-    image: "/proyects/ahorcado.png",
+    "Un chat de voz bot que te permite interactuar con la IA de Gemini 1.5-pro. Puedes hacer preguntas permitiendo el acceso al microfono con tu propia voz y recibir respuestas en formato de voz por parte de la IA, también escribir la pregunta como cualquier chatbot, para detener la conversación presionando el botón Redictar.",
+    link: "https://chat-bot-de-voz-personal.netlify.app/",
+    github: "https://github.com/mzadante/Chat_bot_dev/tree/main/chats/chatbot-voz-nic",
+    image: "/public/proyects/chat-bot-celu.jpeg",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.BOOTSTRAP],
+  },
+  {
+    title: "App Country Search",
+    description:
+    "Aplicación creada para aprende a utilizar el Framework de VueJs y a consumir una API REST. En este caso, se utilizó la API de REST Countries para obtener información de los países del mundo. La aplicación permite buscar países por nombre, filtrarlos por región y ver más detalles de cada país. COMO BONUS: incorpore en su metodo de busqueda el metodo merge sort para tener una busqueda instantanea, Amo este metodo de busqueda!.",
+    link: "https://country-data-search-engine-free.netlify.app/",
+    github: "https://github.com/mzadante/app-paises-api-vue",
+    image: "/public/proyects/country-search.jpeg",
+    tags: [TAGS.VUE],
+  },
+  {
+    title: "E-comerce Tierra Media Store",
+    description:
+    "E-commerce desarrollado como muestra de un comercio dedicad a la venta de productos de merchandising de distintas series, películas y videojuegos. La misma posee carrito de compras y se le puede añadir pasarela de pagos como MERCADOPAGOS. Permite también la contestación de mensajes de contacto a través de la pestaña contestar.",
+    link: "https://transcendent-fox-9b2652.netlify.app/",
+    github: "https://github.com/mzadante",
+    image: "/public/proyects/e-comerce-tm.jpeg",
+    tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT, TAGS.MYSQL],
+  },
+  {
+    title: "Encriptador de mensajes",
+    description:
+    "Este es un encriptador de mensajes que permite encriptar y desencriptar mensajes de texto. La aplicación utiliza el cifrado de César, un tipo de cifrado por sustitución en el que una letra en el texto original es reemplazada por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. Primeras practicas en el año 2022",
+    link: "https://mzadante.github.io/Encriptador_de_Palabras/",
+    github: "https://github.com/mzadante/Encriptador_de_Palabras",
+    image: "/public/proyects/encriptador-nuevo.jpeg",
     tags: [TAGS.HTML, TAGS.CSS, TAGS.JAVASCRIPT],
   },
 ];
@@ -66,39 +105,27 @@ const PROJECTS = [
 
 {
   PROJECTS.map(({ image, title, description, tags, link, github }) => (
-    <div class="flex flex-col items-center border border-gray-200 rounded-lg shadow md:flex-col md:min-w-xl dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 mb-5">
-        
-    <a href={link} target="_blank"
-            rel="noopener" >
-      <img
-      class="rounded shadow-2xl shadow-white/10 aspect-video"
-        src={image}
-        alt={`Captura de pantalla del proyecto ${title}`}
-      />
+  <div class="mb-4 bg-violet-300 max-w-sm bg-white border border-amber-200  rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+    <a href={link} aria-label="proyectos" target="_blank" rel="noopener">
+      <img class="rounded-t-lg" src={image} alt={`Captura de pantalla del proyecto ${title}`}/>
     </a>
-      <div class="flex flex-col justify-between p-4 leading-normal">
-       
-        <h3 class="text-2xl text-yellow-300 dark:text-yellow-200 mb-2 ">
-          {title}
-        </h3>
-        <p class="text-white text-lg mb-4 text-pretty">{description}</p>
-        <ul class="flex gap-x-2 flex-row mb-2 justify-center flex-wrap">
+    <div class="p-4 ">
+      <h4 class="p-1 mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{title}</h4>
+        <p class="p-2 mb-3 font-normal text-gray-700 dark:text-gray-400">{description}</p>
+        <ul class="flex shadow-lg gap-x-1 gap-y-2 flex-row mb-5 p-1 h-1 justify-center flex-wrap ">
           {tags.map((tag) => (
             <li>
               <span
-                class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10 `}
-              >
-                <tag.icon class="size-4" />
+                class={`flex border-lime-950 gap-x-2 rounded-full text-xs ${tag.class} py-1 px-2 border border-white/10 `}>
+                <tag.icon class="size-4 " />
                 {tag.name}
               </span>
             </li>
-          ))}
-          
+          ))}   
         </ul>
-        <a  href={github} target="_blank" rel="noopener">
-          <img class="size-8" src="/proyects/github.svg" alt="Logo github"></a>
-      </div>
-    
-</div>
+        <a href={github} aria-label="proyectos" target="_blank" rel="noopener" class="flex justify-center">
+            <img class="size-8 bg-indigo-950 text-white rounded-lg shadow-lg mt-4" src="/public/proyects/github.svg" alt="Logo github" loading="lazy"></a>
+    </div>
+  </div>
   ))
 }
