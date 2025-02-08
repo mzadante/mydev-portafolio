@@ -17,7 +17,7 @@ import Estudios from "../components/Estudios.astro";
 <Layout
   title="Portafolio Dante Martínez - Técnico universitario Programador - Desarrollo web y software"
 >
-  <main class="px-5 flex-col justify-center ">
+  <main class="px-5 flex-col justify-center">
     <SectionContainer class="py-40 pb-30">
       <!-- <a href="https://www.linkedin.com/in/dantemartínez/" target="_blank">
         <img
@@ -29,28 +29,32 @@ import Estudios from "../components/Estudios.astro";
       <h1
         class="text-white text-2xl md:text-3xl lg:text-4xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10 text-pretty"
       >
-        Hola, soy Dante Martínez
-        <a class="flex justify-center items-center"
+        Hola, soy Nicolás Martínez
+        <a
+          class="flex justify-center items-center"
           href="https://www.linkedin.com/in/dantemartínez/"
           target="_blank"
           rel="noopener"
         >
-		<Badge>Busco Trabajo</Badge>
+          <Badge>Busco Trabajo</Badge>
         </a>
       </h1>
-      <h2 class="text-xl lg:text-2xl text-balance max-w-[700px] text-white dark:text-white">
-        Soy <span class="text-pink-600 dark:text-pink-500">Técnico Universitario en Programación,</span> egresado de la
-        Universidad Tecnológica Nacional (UTN) - FRSR, Argentina.<br />
+      <h2
+        class="text-xl lg:text-2xl text-balance max-w-[700px] text-white dark:text-white"
+      >
+        Soy <span class="text-pink-600 dark:text-pink-500"
+          >Técnico Universitario en Programación,</span
+        > egresado de la Universidad Tecnológica Nacional (UTN) - FRSR, Argentina.<br
+        />
         <span class="text-yellow-300/90"
-          >Me apasiona programar y aprender a desarrollar soluciones de programacion 
-          originales y personalizadas, además de trabajar en equipo para crecer como un buen profesional.</span
+          >Me apasiona programar y aprender a desarrollar soluciones de
+          programacion originales y personalizadas, además de trabajar en equipo
+          para crecer como un buen profesional.</span
         >
       </h2>
       <ul class="flex gap-x-10 mt-10 justify-start text-white">
         <li>
-          <a href="https://github.com/mzadante"
-		   target="_blank" 
-		   rel="noopener">
+          <a href="https://github.com/mzadante" target="_blank" rel="noopener">
             <Github />
           </a>
         </li>
@@ -64,9 +68,11 @@ import Estudios from "../components/Estudios.astro";
           </a>
         </li>
         <li>
-          <a href="https://drive.google.com/file/d/1O4hqzbMADQS8bDgttpqAOGtTUdpMNK-R/view?usp=sharing" 
-		  	target="_blank" 
-		  	rel="noopener">
+          <a
+            href="https://drive.google.com/file/d/1O4hqzbMADQS8bDgttpqAOGtTUdpMNK-R/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+          >
             <Cvitae />
           </a>
         </li>
@@ -82,27 +88,36 @@ import Estudios from "../components/Estudios.astro";
       </ul>
     </SectionContainer>
     <SectionContainer class="pb-20" id="experiencia">
-      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
+      <h2
+        class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white"
+      >
         <ExperienciaIcon class="size-8" />
         Experiencia Laboral
       </h2>
       <Experiencia />
     </SectionContainer>
-    
+
     <SectionContainer class="pb-20" id="estudios">
-      <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white">
-        <EstudiosIcon  class="size-8"/>
+      <h2
+        class="text-3xl mb-5 font-semibold flex gap-x-3 items-center text-white"
+      >
+        <EstudiosIcon class="size-8" />
         Mis Estudios
       </h2>
       <Estudios />
     </SectionContainer>
-    <h2 class="text-3xl mb-5 font-semibold flex gap-x-3 justify-center items-center text-white">
-      <CodeIcon  class="size-10"/>
+    <h2
+      class="text-3xl mb-5 font-semibold flex gap-x-3 justify-center items-center text-white"
+    >
+      <CodeIcon class="size-10" />
       Proyectos
     </h2>
-    
-    <SectionContainer id="proyectos" class="flex flex-row flex-wrap gap-x-7 justify-center ">
-      <Proyectos/>      
+
+    <SectionContainer
+      id="proyectos"
+      class="flex flex-row flex-wrap gap-x-7 justify-center"
+    >
+      <Proyectos />
     </SectionContainer>
   </main>
 </Layout>
